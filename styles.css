@@ -7,6 +7,7 @@
 
 }
 
+
 body {
     min-height: 100vh;
     display: flex;
@@ -106,4 +107,11 @@ a {
 
     animation-name: slide-in-out;
     animation-duration: 4s;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10% 10% 0% 10%;
+    }
 }

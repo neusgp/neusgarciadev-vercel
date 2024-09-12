@@ -18,7 +18,7 @@ const showTooltip = (button) => {
   setTimeout(() => {
     tooltip.classList.remove("show");
     tooltip.remove();
-  }, 2000);
+  }, 4000);
 };
 
 const emailButtons = document.querySelectorAll('[id="copy-email"]');

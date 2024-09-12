@@ -72,19 +72,38 @@ a {
     color: #837ce5
 }
 
+@keyframes slide-in-out {
+    0% {
+        right: -220px;
+    }
+
+    25% {
+        right: 0px;
+    }
+
+    75% {
+        right: 0px;
+    }
+
+    100% {
+        right: -220px;
+    }
+}
+
 .tooltip {
-    font-size: 12px;
-    width: 200px;
+    font-size: 14px;
+    text-align: center;
+    width: 220px;
 
     position: fixed;
     z-index: 1;
     top: 50px;
-    right: 0;
-
 
     background-color: black;
     color: white;
     padding: 8px;
     border-radius: 6px 0px 0px 6px;
 
+    animation-name: slide-in-out;
+    animation-duration: 4s;
 }

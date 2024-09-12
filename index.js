@@ -21,7 +21,7 @@ const showTooltip = (button) => {
   }, 2000);
 };
 
-const emailButtons = document.querySelectorAll('[id="email-button"]');
+const emailButtons = document.querySelectorAll('[id="copy-email"]');
 
 emailButtons.forEach((button) => {
   button.addEventListener("click", () => {

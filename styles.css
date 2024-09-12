@@ -25,7 +25,7 @@ header {
 #social-icons {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 18px;
 
 }
 

@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
     font-family: "Inter", sans-serif;
     color: #333333;
     line-height: 1.4;
@@ -65,4 +66,21 @@ footer {
 a {
     text-decoration: none;
     color: #837ce5
+}
+
+.tooltip {
+    font-size: 12px;
+    width: 200px;
+
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    right: 0;
+
+
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 6px 0px 0px 6px;
+
 }

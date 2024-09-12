@@ -4,20 +4,20 @@ const copyMailToClipboard = () => {
   navigator.clipboard.writeText(email);
 };
 
-const showTooltip = (button) => {
-  const tooltip = document.createElement("span");
-  tooltip.className = "tooltip";
-  tooltip.textContent = "Copied neusgarciadev@gmail.com to the clipboard!";
+const showNotification = (button) => {
+  const notification = document.createElement("span");
+  notification.className = "notification";
+  notification.textContent = "Copied neusgarciadev@gmail.com to the clipboard!";
 
-  button.appendChild(tooltip);
+  button.appendChild(notification);
 
   setTimeout(() => {
-    tooltip.classList.add("show");
+    notification.classList.add("show");
   }, 500);
 
   setTimeout(() => {
-    tooltip.classList.remove("show");
-    tooltip.remove();
+    notification.classList.remove("show");
+    notification.remove();
   }, 4000);
 };
 
@@ -27,7 +27,7 @@ emailButtons.forEach((button) => {
   button.addEventListener("click", () => {
     try {
       copyMailToClipboard();
-      showTooltip(button);
+      showNotification(button);
     } catch (err) {
       alert("There was an error copying the email to the clipboard", err);
     }

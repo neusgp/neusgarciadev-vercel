@@ -52,6 +52,11 @@ h3 {
 
 }
 
+#contact-me {
+    display: flex;
+    align-items: center;
+}
+
 footer {
     margin: 100px 0 10px 0;
     display: flex;

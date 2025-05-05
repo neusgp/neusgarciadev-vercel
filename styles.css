@@ -50,8 +50,8 @@ header {
 }
 
 header img {
-  width: 50%;
-  height: auto;
+  width: 60%;
+  height: min-content;
 }
 
 .title {
@@ -90,6 +90,7 @@ header img {
   justify-content: center;
   gap: 40px;
 }
+
 #my-journey {
   padding: 0 80px;
 }
@@ -97,7 +98,9 @@ header img {
 .stack {
   margin: 20px;
   align-self: center;
+  text-align: center;
 }
+
 #friends {
   background-color: #781517;
   padding: 60px 0;
@@ -114,9 +117,6 @@ header img {
 #what-is-next {
   align-self: center;
   width: 60%;
-}
-
-#what-is-next .section-text {
 }
 
 #copy-email {
@@ -182,8 +182,26 @@ a {
   animation-duration: 4s;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   body {
-    padding: 10% 10% 0% 10%;
+    padding: 50px 0;
+  }
+  header {
+    flex-direction: column;
+    padding: 0 50px;
+  }
+  header img {
+    align-self: center;
+    width: 88%;
+  }
+  #my-journey {
+    padding: 0 50px;
+  }
+  #friends .section-text {
+    width: 70%;
+  }
+  #what-is-next {
+    align-self: center;
+    width: 70%;
   }
 }

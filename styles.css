@@ -1,117 +1,189 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    color: #333333;
-    line-height: 1.4;
-
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair", serif;
+  font-size: 20px;
+  color: #781517;
 }
 
+h1 {
+  font-weight: 300;
+  font-size: 60px !important;
+  line-height: 80%;
+}
+
+h2,
+h3,
+h4,
+.stack,
+.find-out {
+  font-family: "Rethink Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px !important;
+  text-transform: uppercase;
+}
+
+h2,
+h4,
+.find-out {
+  font-weight: 300;
+  color: #c97977;
+}
+
+p {
+  line-height: 1.6;
+  font-weight: 500;
+}
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 5% 20% 0 20%;
-    gap: 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0;
+  background-color: #fffdf7;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding: 0 180px;
+}
 
+header img {
+  width: 50%;
+  height: auto;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 #social-icons {
-    display: flex;
-    flex-direction: row;
-    gap: 18px;
-
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
 }
 
 #content {
-    display: flex;
-    flex-direction: column;
-    gap: 40px
+  display: flex;
+  flex-direction: column;
 }
 
 .section {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-h3 {
-    font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 40px 0;
 }
 
 .section-text {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 0;
+}
+
+#about-me {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+#my-journey {
+  padding: 0 80px;
+}
+
+.stack {
+  margin: 20px;
+  align-self: center;
+}
+#friends {
+  background-color: #781517;
+  padding: 60px 0;
+  align-items: center;
+}
+#friends .section-text {
+  text-align: center;
+  width: 60%;
+}
+
+#friends .section-text p {
+  color: #fffdf7 !important;
+}
+#what-is-next {
+  align-self: center;
+  width: 60%;
+}
+
+#what-is-next .section-text {
+}
+
+#copy-email {
+  font-family: "Rethink Sans", sans-serif;
+  text-transform: lowercase;
 }
 
 #copy-email:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #contact-me {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 footer {
-    margin: 100px 0 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: 100px 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
-    text-decoration: none;
-    color: #837ce5
+  text-decoration: underline;
+  color: #781517;
 }
 
 @keyframes slide-in-out {
-    0% {
-        right: -220px;
-    }
+  0% {
+    right: -220px;
+  }
 
-    25% {
-        right: 0px;
-    }
+  25% {
+    right: 0px;
+  }
 
-    75% {
-        right: 0px;
-    }
+  75% {
+    right: 0px;
+  }
 
-    100% {
-        right: -220px;
-    }
+  100% {
+    right: -220px;
+  }
 }
 
 .notification {
-    font-size: 14px;
-    text-align: center;
-    width: 220px;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Rethink Sans", sans-serif;
+  width: 220px;
 
-    position: fixed;
-    z-index: 1;
-    top: 50px;
-    right: -220px;
-    background-color: black;
-    color: white;
-    padding: 8px;
-    border-radius: 6px 0px 0px 6px;
+  position: fixed;
+  z-index: 1;
+  top: 50px;
+  right: -220px;
+  background-color: #3c090a;
+  color: white;
+  padding: 8px;
+  border-radius: 6px 0px 0px 6px;
 
-    animation-name: slide-in-out;
-    animation-duration: 4s;
+  animation-name: slide-in-out;
+  animation-duration: 4s;
 }
 
-
 @media only screen and (max-width: 600px) {
-    body {
-        padding: 10% 10% 0% 10%;
-    }
+  body {
+    padding: 10% 10% 0% 10%;
+  }
 }

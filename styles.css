@@ -52,7 +52,7 @@ header {
 
 header img {
   width: 60%;
-  height: min-content;
+  min-height: initial;
 }
 
 .title {
